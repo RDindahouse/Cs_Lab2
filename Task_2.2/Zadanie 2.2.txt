@@ -1,0 +1,25 @@
+Задание 2. Разработать статический класс для преобразования, приведенного ниже xml документа в объект класса Order, 
+содержащий список (использовать контейнер List) объектов класса Item. Количество объектов Item в списке не ограничено. 
+Классы Item и Order разработать самостоятельно. Написать программу, иллюстрирующую работу созданных классов.
+
+<?xml version="1.0"?>
+<shipOrder>
+ <shipTo>
+  <name>Tove Svendson</name>
+  <street>Ragnhildvei 2</street>
+  <address>4000 Stavanger</address>
+  <country>Norway</country>
+ </shipTo>
+ <items>
+  <item>
+   <title>Empire Burlesque</title>
+   <quantity>1</quantity>
+   <price>10.90</price>
+  </item>
+  <item>
+   <title>Hide your heart</title>
+   <quantity>1</quantity>
+   <price>9.90</price>
+  </item>
+ </items>
+</shipOrder>
