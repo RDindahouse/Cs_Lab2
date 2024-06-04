@@ -88,14 +88,14 @@ public class Date
     }
 
     // Override Equals() method to compare dates
-    public override bool Equals(object obj)
+    public override bool Equals([System.Diagnostics.CodeAnalysis.AllowNull] object obj)
+{
+    if (obj is Date otherDate)
     {
-        if (obj is Date otherDate)
-        {
-            return this == otherDate;
-        }
-        return false;
+        return this == otherDate;
     }
+    return false;
+}
 
     // Override GetHashCode() method
     public override int GetHashCode()
