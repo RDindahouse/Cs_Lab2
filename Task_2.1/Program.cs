@@ -7,15 +7,15 @@ class Program
 {
     static void Main()
     {
-        // Путь к текстовому файлу
+        // .txt file path
         string filePath = "test.txt";
 
         try
         {
-            // Чтение содержимого файла
+            // Reading the contents of a file
             string[] lines = File.ReadAllLines(filePath);
 
-            // Проверка, что в файле > 3 строк
+            // Check that the file has > 3 lines
             if (lines.Length < 3)
             {
                 Console.WriteLine("The file contains insufficient lines.");
@@ -29,7 +29,7 @@ class Program
             //}
             //Console.WriteLine();
 
-            // Вывод последних 3 строк в обратном порядке
+            // Output last 3 lines in reverse order
             for (int i = lines.Length - 1; i >= lines.Length - 3; i--)
             {
                 Console.WriteLine(lines[i]);
