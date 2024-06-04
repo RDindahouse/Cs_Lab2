@@ -8,7 +8,6 @@ class Program
     static void Main()
     {
         // Путь к текстовому файлу
-        // 
         string filePath = "test.txt";
 
         try
